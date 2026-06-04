@@ -1,59 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dodolamen - Personal Homepage</title>
+  <title>dodolamen | Backend & AI Developer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+<!-- 粒子背景容器 -->
+<div id="particles"></div>
 
-  <div class="container">
-    <div class="card">
-      <div class="header">
-        <h1>Hi, I'm dodolamen 👋</h1>
-        <p class="subtitle">Backend & AI Developer | Python & Linux Enthusiast</p>
-      </div>
-
-      <div class="about">
-        <h2>About Me</h2>
-        <p>🔭 Working on personal open-source projects</p>
-        <p>🌱 Learning Python / Frontend / AI development</p>
-        <p>⚡ Always exploring new tech stacks</p>
-      </div>
-
-      <div class="skills">
-        <h2>Tech Stack</h2>
-        <div class="tags">
-          <span>Python</span>
-          <span>FastAPI</span>
-          <span>Linux</span>
-          <span>Git</span>
-          <span>Docker</span>
-          <span>AI</span>
-          <span>LLM</span>
-          <span>JavaScript</span>
-        </div>
-      </div>
-
-      <div class="links">
-        <h2>Connect With Me</h2>
-        <div class="social">
-          <a href="https://github.com/dodolamen" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="mailto:kaisong_xiao@163.com">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-        </div>
-      </div>
-
-      <div class="footer">
-        <p>Thanks for visiting! 🚀</p>
+<div class="container">
+  <div class="main-card">
+    <!-- 头部 -->
+    <div class="avatar-box">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/你的githubID?v=4" alt="avatar">
+    </div>
+    <div class="header">
+      <h1>Hi, I'm dodolamen 👋</h1>
+      <div class="typing-box">
+        <span id="typing"></span><span class="cursor">|</span>
       </div>
     </div>
-  </div>
 
+    <!-- 关于我 -->
+    <section class="section">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <ul>
+        <li>🔭 Focus on personal open-source & multimodal misinformation detection research</li>
+        <li>🌱 Main research: LLM、Multimodal、Backend development、Python & Linux</li>
+        <li>📌 Have submitted papers to top conference: ICLR</li>
+        <li>⚡ Daily: Coding + Reading AI papers</li>
+      </ul>
+    </section>
+
+    <!-- 技术栈 -->
+    <section class="section">
+      <h2><i class="fas fa-code"></i> Tech Stack</h2>
+      <div class="tag-group">
+        <span class="tag py">Python</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Git</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">LLM</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML/CSS</span>
+      </div>
+    </section>
+
+    <!-- 科研论文 -->
+    <section class="section">
+      <h2><i class="fas fa-book"></i> Publications</h2>
+      <div class="paper-card">
+        <h3>XFACTA: Contemporary, Real-World Dataset For Multimodal Misinformation Detection</h3>
+        <p>Submitted to ICLR 2026 | arXiv preprint</p>
+        <a href="https://arxiv.org/abs/2508.09999" target="_blank" class="paper-link">
+          <i class="fas fa-external-link-alt"></i> View arXiv
+        </a>
+      </div>
+    </section>
+
+    <!-- 开源项目 -->
+    <section class="section">
+      <h2><i class="fas fa-folder-open"></i> Open Source Projects</h2>
+      <div class="project-wrap">
+        <div class="project-card">
+          <h3>AI Fact Check Tool</h3>
+          <p>Multimodal fake news detection tool based on LLM</p>
+          <a href="https://github.com/dodolamen" target="_blank">Github</a>
+        </div>
+        <div class="project-card">
+          <h3>Python Backend Template</h3>
+          <p>FastAPI + Docker lightweight backend scaffold</p>
+          <a href="https://github.com/dodolamen" target="_blank">Github</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 社交链接 -->
+    <section class="section">
+      <h2><i class="fas fa-link"></i> Contact</h2>
+      <div class="social-group">
+        <a href="https://github.com/dodolamen" target="_blank" class="social-btn github">
+          <i class="fab fa-github"></i> Github
+        </a>
+        <a href="mailto:kaisong_xiao@163.com" class="social-btn email">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      <p>Thanks for visiting my homepage 🚀 | Powered by GitHub Pages</p>
+    </footer>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
